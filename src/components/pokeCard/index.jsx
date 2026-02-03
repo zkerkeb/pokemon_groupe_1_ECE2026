@@ -1,26 +1,15 @@
 import { useEffect,useState, useRef } from "react";
+import { Link } from "react-router";
 import './index.css';
 
+import usePokemon from "../../hooks/usePokemon.jsx";
+
 const PokeCard = ({ pokemon }) => {
-    const [pokeState, setPokeState] = useState({});
+    const {pokeState, loading} = usePokemon(pokemon.url);
     const audioRef = useRef(null);
 
-    useEffect   (() => {
-        fetch(pokemon.url)
-            .then((response) => response.json())
-            .then((data) => {
-                setPokeState(data);
-                console.log("Détails du Pokémon reçus:", data);
-            })
-            .catch((error) => {
-                console.error("Erreur lors de la récupération des détails du Pokémon:", error);
-            });
-    }, [pokemon]);
-
-
-
-
     return (
+        <Link to={`/pokemon/${encodeURIComponent(pokemon.url)}`}>
         <div className="poke-card">
             <div className="poke-title-container">
                 <span>{pokeState.name}</span>
@@ -39,6 +28,7 @@ const PokeCard = ({ pokemon }) => {
                 
             <button onClick={() => audioRef.current.play()}>Écouter le cri</button>
         </div>
+        </Link>
     );
 }
 

@@ -1,5 +1,6 @@
 
 .poke-card{
+    cursor:pointer;
     background-color: red;
     display:flex;
     flex-direction: column;

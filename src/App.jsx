@@ -12,7 +12,7 @@ function App() {
       <Title label="Titre 3" />
       <Title label="Titre 4" />
       <Title/> */}
-      <Counter/>
+      {/* <Counter/> */}
       <PokeList/>
     </div>
   )

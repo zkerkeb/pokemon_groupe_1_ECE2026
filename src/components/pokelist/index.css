@@ -1,0 +1,6 @@
+.poke-list{
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 8px;
+}

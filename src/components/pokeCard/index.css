@@ -1,0 +1,165 @@
+
+.poke-card{
+    background-color: red;
+    display:flex;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    border-radius: 4px;
+}
+
+.poke-title-container{
+    background-color: blue;
+    display:flex;
+    flex-direction: row;
+    padding: 8px;
+}
+
+.poke-image{
+    width: 100px;
+    height: 100px;
+
+}
+
+.poke-image-container{
+    margin: 8px;
+    background-color: bisque;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.type-poison{
+    background-color: purple;
+    border-radius: 4px;
+    padding: 2px;
+  
+}
+.type-grass{
+    background-color: green;
+    border-radius: 4px;
+    padding: 2px;
+  
+}
+.type-fire{
+    background-color: orange;
+    border-radius: 4px;
+    padding: 2px;
+  
+}
+.type-flying{
+    background-color: lightblue;
+    border-radius: 4px;
+    padding: 2px;       
+  
+}
+
+.type-water{
+    background-color: blue;
+    border-radius: 4px;
+    padding: 2px;       
+  
+}
+.type-bug{
+    background-color: yellow;
+    border-radius: 4px;
+    padding: 2px;   
+  
+}
+
+.type-normal{
+    background-color: grey;
+    border-radius: 4px;
+    padding: 2px;   
+  
+}
+
+.type-electric{
+    background-color: gold;
+    border-radius: 4px;
+    padding: 2px;   
+  
+}
+
+.type-ground{
+    background-color: sienna;
+    border-radius: 4px;
+    padding: 2px;   
+  
+}
+
+.type-fairy{
+    background-color: pink;
+    border-radius: 4px;
+    padding: 2px;   
+  
+}
+
+.type-psychic{
+    background-color: violet;
+    border-radius: 4px;
+    padding: 2px;   
+  
+}
+
+.type-rock{
+    background-color: brown;
+    border-radius: 4px;
+    padding: 2px;   
+  
+}
+
+.type-ice{
+    background-color: lightcyan;
+    border-radius: 4px;
+    padding: 2px;   
+  
+}
+
+.type-ghost{
+    background-color: indigo;
+    border-radius: 4px;
+    padding: 2px;   
+  
+}
+
+.type-dragon{
+    background-color: darkblue;
+    border-radius: 4px;
+    padding: 2px;   
+  
+}
+
+.type-dark{
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 2px;   
+  
+}
+
+.type-steel{
+    background-color: silver;
+    border-radius: 4px;
+    padding: 2px;   
+  
+}
+
+.type-fighting{
+    background-color: maroon;
+    border-radius: 4px;
+    padding: 2px;   
+  
+}
+
+.type-container{
+    display: flex;
+    gap: 4px;
+    padding-left: 8px;
+    margin-bottom: 8px;
+
+}
+
+.type-font{
+    font-size: 8px;
+}

@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import PokeCard from "../pokeCard";
-
+import CardWrapper from "../cardWrapper";
 import './index.css';
+
+
 
 const PokeList = () => {
     const [pokemons, setPokemons] = useState([]);
@@ -30,7 +32,9 @@ const PokeList = () => {
             <h2>Liste des Pokémon</h2>
             <ul className="poke-list">
                 {pokemons.map((pokemon, index) => (
-                    <PokeCard key={index} pokemon={pokemon} />
+                    <CardWrapper key={index}>
+                        <PokeCard pokemon={pokemon} />
+                    </CardWrapper>
                 ))}
             </ul>
         </div>

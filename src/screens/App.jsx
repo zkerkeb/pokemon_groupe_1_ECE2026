@@ -6,6 +6,7 @@ import PokeList from '../components/pokelist'
 import {Link} from "react-router" 
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router'
+import Pokedex from '../components/pokedex'
 
 function App() {
   const navigate = useNavigate();
@@ -29,8 +30,7 @@ function App() {
       <Title/> */}
       {/* <Counter/> */}
       <Link to="/pokemon-details">Détails du Pokémon</Link>
-
-      <PokeList/>
+      <Pokedex />
     </div>
   )
 }
